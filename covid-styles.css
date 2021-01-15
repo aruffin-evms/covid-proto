@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    margin-top: 10%;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.covid {
+  padding-bottom: 30px;
+}
+
+.covid__title {
+  font-size: 40px;
+  padding-left: 5%;
+  padding-top: 25px;
+  font-weight: 600;
+  color: #be4f1c;
+  height: 160px;
+  width: 90%;
+
+}
+
+@media(min-width: 900px) {
+  .covid__title {
+    font-size: 60px;
+    height: unset;
+  }
+}
+
+.covid__ctas {
+  width: 90vw;
+  height: auto;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media(min-width: 900px) {
+  .covid__ctas {
+    height: 100px;
+    align-content: center;
+  }
+}
+
+.covid__cta {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  height: auto;
+  max-height: 110px;
+  width: 250px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: all .5s;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media(min-width: 900px) {
+  .covid__cta {
+    margin: 0;
+  }
+}
+
+.covid__cta__one {
+  background-color: #1f7f9b;
+  line-height: 30px;
+}
+
+.covid__cta__one:hover {
+  background-color: white;
+  color: #1f7f9b;
+  border: solid 1px #1f7f9b;
+  border-radius: 5px;
+}
+
+
+.covid__cta__two {
+  background-color: #be4f1c;
+  line-height: 18px;
+}
+
+.covid__cta__two:hover {
+  background-color: white;
+  color: #be4f1c;
+  border: solid 1px #be4f1c;
+  border-radius: 5px;
+}
+
+.covid__cta__three {
+  background-color: #05c3de;
+  padding-top: 12px;
+  line-height: 22px;
+}
+
+.covid__cta__three:hover {
+  background-color: white;
+  color: #05c3de;
+  border: solid 1px #05c3de;
+  border-radius: 5px;
+}
+
+.covid__cta__four {
+  background-color: #002539;
+}
+
+.covid__cta__four:hover {
+  background-color: white;
+  color: #002539;
+  border: solid 1px #002539;
+  border-radius: 5px;
+}
+
+.covid__blog-post {
+  max-width: 90vw;
+  width: 90%;
+  padding-top: 60px;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+@media(min-width: 900px) {
+  .covid__blog-post {
+    max-width: 50vw;
+  }
+}
+
+.covid__blog-post__container {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.covid__blog-post__container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.covid__asset-wrapper__video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  border-radius: 5px 5px 0 0;
+}
+
+.covid__asset-wrapper__image {
+  width: 100%;
+}
+
+.covid__image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.covid__asset__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.covid__blog-post__created-date {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+@media (min-width: 900px) {
+  .covid__blog-post__created-date {
+    padding: 20px 20px 0;
+    text-align: unset;
+  }
+}
+
+.covid__blog-post__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #1f7f9b;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+@media(min-width: 900px) {
+  .covid__blog-post__title {
+    padding: 15px 20px;
+  }
+}
+
+.covid__blog-post__link {
+  text-decoration: none;
+  color: unset;
+}
+
+.covid__blog-post__link:hover {
+  text-decoration: none !important;
+  color: initial !important;
+}
+
+.covid__more-posts {
+  height: auto;
+  width: auto;
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+
+.covid__more-posts__section-title {
+  font-size: 36px;
+}
+
+.covid__more-posts__article {
+  height: auto;
+  padding-top: 20px;
+  width: 400px;
+}
+
+.covid__more-posts__image-wrapper {
+  background-color: gray;
+  height: 200px;
+  width: 90%;
+}
+
+.covid__more-posts__title {
+  padding-top: 10px;
+}
+
+.show-post {
+  visibility: visible;
+  animation: slideUpFadeIn 1s;
+}
